@@ -8,6 +8,8 @@ from TraceIP import read_multiple_ip
 from webscrap import Links
 from NameInfo import Nameinfo
 from number import number
+from openport import openport
+
 R = '\033[1;31;40m' 
 G = '\033[1;32;40m'
 C = '\033[1;36;40m'
@@ -30,6 +32,8 @@ def reconinput():
         Nameinfo()
     elif (inp=='8'):
         number()
+    elif (inp=='9'):
+        openport()
     elif(inp=='exit'):
         exit()
     elif(inp=='tools'):
@@ -43,6 +47,7 @@ def reconinput():
             6.URL lookup in webpages
             7.Information Gathering using Name
             8.Phonenumber verifier
+            9.Find open ports
             
             usage : type exit to stop
             """)
@@ -54,4 +59,3 @@ def reconinput():
 if __name__=="__main__":
    reconinput()
      
-    
